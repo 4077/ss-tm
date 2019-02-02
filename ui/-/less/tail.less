@@ -1,0 +1,164 @@
+// head {
+@import "classes.less";
+
+@__nodeId__: ~"ss_tm_ui__tail";
+// }
+
+.@{__nodeId__} {
+    width: 100%;
+
+    table.records {
+        width: 100%;
+        background-color: #E0E0E0;
+        border-spacing: 1px;
+
+        tr.record {
+            .classes;
+            height: 100%;
+
+            > td {
+                position: relative;
+                height: 100%;
+                padding: 5px;
+                background-color: #FAFAFA;
+
+                &.client_cell {
+                    cursor: pointer;
+
+                    > .main {
+                        display: flex;
+                        align-items: flex-start;
+
+                        .avatar {
+                            margin: 0 5px 0 0;
+                            opacity: .8;
+                        }
+
+                        .client {
+                            width: 100%;
+
+                            .row {
+                                display: flex;
+                                align-items: center;
+
+                                .device {
+                                    margin-left: 5px;
+                                    display: flex;
+                                    align-items: center;
+
+                                    .icon {
+                                        color: #404040;
+
+                                        &.fa-desktop {
+                                            font-size: 10px;
+                                        }
+
+                                        &.fa-mobile {
+                                            font-size: 12px;
+                                        }
+
+                                        &.fa-tablet {
+                                            font-size: 11px;
+                                        }
+                                    }
+                                }
+
+                                .name {
+                                    white-space: nowrap;
+                                    flex-grow: 1;
+                                }
+
+                                .human {
+
+                                    .icon {
+                                        display: none;
+                                        color: #000000;
+                                    }
+
+                                    &.is_human {
+
+                                        .icon {
+                                            display: block;
+                                        }
+                                    }
+                                }
+
+                                .city {
+                                    white-space: nowrap;
+                                    font-weight: bold;
+                                    font-size: 10px;
+                                    margin-left: 5px;
+                                    color: #5C5C5C;
+                                }
+
+                                .datetime {
+                                    color: #C0C0C0;
+                                    font-size: 10px;
+                                    white-space: nowrap;
+                                }
+                            }
+
+                            &.user {
+
+                                .name {
+                                    font-weight: bold;
+                                }
+                            }
+
+                            &.guest {
+
+                                .name {
+                                    color: #606060;
+                                    font-style: italic;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #FEFFE7;
+                    }
+                }
+
+                > .event {
+                    display: flex;
+                    align-items: center;
+                    min-height: 21px;
+
+                    color: #909090;
+
+                    > .icon {
+                        width: 20px;
+                        text-align: center;
+                        margin-right: 5px;
+                        font-size: 14px;
+                    }
+
+                    > .name {
+                        white-space: nowrap;
+                        margin-right: 5px;
+                        font-size: 11px;
+                        font-weight: bold;
+                    }
+                }
+
+                > .event_desc {
+                    color: #606060;
+                    min-height: 21px;
+                    display: flex;
+                    align-items: center;
+
+                    //.human_actions_bar {
+                    //    position: absolute;
+                    //    left: 0;
+                    //    top: 0;
+                    //    width: 100%;
+                    //    height: 100%;
+                    //    background-color: rgba(0, 0, 0, 0.2);
+                    //}
+                }
+            }
+        }
+    }
+}

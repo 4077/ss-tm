@@ -1,5 +1,7 @@
 <?php namespace ss\tm\Svc\Clients;
 
+// todo сделать в sstm рендрилку аватарок отдельной
+
 class ClientInfo
 {
     private $sessionKey;
